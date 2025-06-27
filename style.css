@@ -1,0 +1,81 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to right, #fbc2eb, #a6c1ee);
+    margin: 0;
+    padding: 0;
+    color: #333;
+    overflow-x: hidden;
+}
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+header, footer {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #6a11cb;
+    color: white;
+}
+.profile-card {
+    background: #fff;
+    padding: 40px;
+    margin: 40px 0;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    text-align: center;
+}
+.profile-img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 6px solid #6a11cb;
+    margin-bottom: 20px;
+}
+.bio-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+    text-align: left;
+}
+.bio-list li {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+.quote {
+    background: #fffbe6;
+    padding: 30px;
+    border-left: 10px solid #ffd54f;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    margin-bottom: 40px;
+}
+button {
+    padding: 12px 24px;
+    font-size: 1rem;
+    background-color: #ff4081;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+button:hover {
+    background-color: #f50057;
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+@keyframes zoomIn {
+    from { transform: scale(0.9); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+@keyframes slideUp {
+    from { transform: translateY(30px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+.fade-in { animation: fadeIn 1.5s ease-in-out; }
+.zoom-in { animation: zoomIn 1.2s ease; }
+.slide-up { animation: slideUp 1.2s ease-in-out; }
